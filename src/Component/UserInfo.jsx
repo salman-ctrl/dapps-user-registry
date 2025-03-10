@@ -58,7 +58,11 @@ function UserInfo() {
 
             {error && <p className="text-red-500">{error}</p>}
 
-           
+            {userData && !error && (
+                <div className="p-4 bg-white shadow-lg rounded">
+                    <p><strong>Nama:</strong> {userData[0]}</p>
+                    <p><strong>Wallet:</strong> {userData[1]}</p>
+                </div>
             )}
         </div>
     );
