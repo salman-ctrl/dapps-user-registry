@@ -77,7 +77,8 @@ export async function registerUser(name) {
 
 export async function getUser(wallet) {
     try {
-
+        const provider = new ethers.BrowserProvider(window.ethereum);
+        const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
         const user = await contract.getUser(wallet);
         console.log("Data user:", user);
