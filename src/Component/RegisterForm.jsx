@@ -21,13 +21,7 @@ function RegisterForm() {
                 className="border p-2 rounded w-80"
                 placeholder="Masukkan nama Anda"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
-            />
-            <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={handleRegister}>
-                Daftar
-            </button>
-        </div>
-    );
+             
 }
 
-export default RegisterForm;
+            export default RegisterForm;
