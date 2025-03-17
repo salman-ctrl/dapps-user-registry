@@ -7,7 +7,10 @@ function RegisterForm() {
     const handleRegister = async () => {
         try {
             await registerUser(name);
-
+            alert("User berhasil didaftarkan!");
+        } catch (error) {
+            console.error(error);
+            alert("Gagal mendaftar");
         }
     };
 
